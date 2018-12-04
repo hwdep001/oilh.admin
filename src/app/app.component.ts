@@ -12,6 +12,8 @@ import { SignInPage } from './../pages/sign-in/sign-in';
 import { MyInfoPage } from './../pages/my-info/my-info';
 
 import { User } from 'firebase';
+import { UserListPage } from '../pages/user-list/user-list';
+import { CodeListPage } from './../pages/code-list/code-list';
 
 @Component({
   templateUrl: 'app.html'
@@ -67,6 +69,20 @@ export class MyApp {
       
       // 페이지 설정
       this.isSignedIn = true;
+
+      const userListPage: PageInterface = {
+        title: 'User Mng', 
+        name: 'userListPage', 
+        component: UserListPage, 
+        param: {activeName: "userListPage"}, icon: 'people'
+      };
+
+      const codeListPage: PageInterface = {
+        title: 'User Mng', 
+        name: 'codeListPage', 
+        component: CodeListPage, 
+        param: {activeName: "codeListPage"}, icon: 'key'
+      };
       
       const myInfoPage: PageInterface = {
         title: 'My Info', 
@@ -76,6 +92,8 @@ export class MyApp {
       };
 
       this.mngPages = [];
+      this.mngPages.push(userListPage);
+      this.mngPages.push(codeListPage);
 
       this.settingPages = [];
       this.settingPages.push(myInfoPage);

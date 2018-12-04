@@ -19,12 +19,16 @@ import { UserProvider } from './../providers/User';
 
 import { MyApp } from './app.component';
 import { SignInPage } from './../pages/sign-in/sign-in';
+import { UserListPage } from './../pages/user-list/user-list';
+import { CodeListPage } from './../pages/code-list/code-list';
 import { MyInfoPage } from './../pages/my-info/my-info';
 
 @NgModule({
   declarations: [
     MyApp,
     SignInPage,
+    UserListPage,
+    CodeListPage,
     MyInfoPage
   ],
   imports: [
@@ -40,6 +44,8 @@ import { MyInfoPage } from './../pages/my-info/my-info';
   entryComponents: [
     MyApp,
     SignInPage,
+    UserListPage,
+    CodeListPage,
     MyInfoPage
   ],
   providers: [
