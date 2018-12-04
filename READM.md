@@ -48,13 +48,6 @@ $ npm install --save @ionic-native/splash-screen
 ```
 
 
-## [In App Browser](https://ionicframework.com/docs/native/in-app-browser/)
-```
-$ ionic cordova plugin add cordova-plugin-inappbrowser
-$ npm install --save @ionic-native/in-app-browser
-```
-
-
 ## [Firebase](https://ionicframework.com/docs/native/firebase/)
 ```
 $ ionic cordova plugin add cordova-plugin-firebase
